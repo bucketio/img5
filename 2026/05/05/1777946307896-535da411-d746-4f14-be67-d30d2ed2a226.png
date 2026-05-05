@@ -1,0 +1,25 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#F8F6F1"/>
+  <rect x="58" y="54" width="1084" height="567" rx="34" fill="#FFFFFF" stroke="#E6E0D4" stroke-width="2"/>
+  <rect x="98" y="104" width="420" height="467" rx="28" fill="#202124"/>
+  <circle cx="135" cy="139" r="8" fill="#FF6B6B"/>
+  <circle cx="164" cy="139" r="8" fill="#FFD166"/>
+  <circle cx="193" cy="139" r="8" fill="#4DDB8F"/>
+  <text x="132" y="211" fill="#F8F8F2" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="38" font-weight="800">Publisher Copy</text>
+  <text x="132" y="267" fill="#C9D1D9" font-family="SF Mono, Menlo, monospace" font-size="25">Obsidian -> WeChat</text>
+  <text x="132" y="337" fill="#8BE9FD" font-family="SF Mono, Menlo, monospace" font-size="23">Cmd + Shift + C</text>
+  <text x="132" y="382" fill="#F8F8F2" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="24">复制公众号格式</text>
+  <text x="132" y="448" fill="#7EE787" font-family="SF Mono, Menlo, monospace" font-size="23">images: OK</text>
+  <text x="132" y="493" fill="#7EE787" font-family="SF Mono, Menlo, monospace" font-size="23">layout: themed</text>
+  <rect x="586" y="126" width="456" height="92" rx="18" fill="#FFF4E6"/>
+  <text x="624" y="185" fill="#B35A20" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="42" font-weight="900">不会写代码，也能做工具</text>
+  <text x="590" y="286" fill="#1F2328" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="62" font-weight="900">我用 AI 做了一个</text>
+  <text x="590" y="362" fill="#1F2328" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="62" font-weight="900">Obsidian 插件</text>
+  <text x="594" y="426" fill="#6A6258" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="30" font-weight="600">从一个公众号排版痛点开始</text>
+  <rect x="590" y="486" width="148" height="54" rx="27" fill="#202124"/>
+  <text x="626" y="522" fill="#FFFFFF" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="24" font-weight="700">AI 对话</text>
+  <rect x="758" y="486" width="148" height="54" rx="27" fill="#FFF4E6" stroke="#E9C79E"/>
+  <text x="794" y="522" fill="#B35A20" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="24" font-weight="700">插件生成</text>
+  <rect x="926" y="486" width="148" height="54" rx="27" fill="#F0F4FF" stroke="#C9D6FF"/>
+  <text x="962" y="522" fill="#4F5FD5" font-family="SF Pro Display, PingFang SC, sans-serif" font-size="24" font-weight="700">一键发布</text>
+</svg>
