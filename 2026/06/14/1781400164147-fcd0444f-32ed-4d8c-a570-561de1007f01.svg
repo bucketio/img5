@@ -1,0 +1,30 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">内存像临时工作台</title>
+  <desc id="desc">内存负责临时运行任务，硬盘负责长期保存文件</desc>
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <text x="70" y="84" fill="#111827" font-size="42" font-weight="700">内存不是仓库，而是临时工作台</text>
+    <text x="72" y="130" fill="#475569" font-size="24">工作台越大，同时摊开的任务越多</text>
+    <g transform="translate(105 220)">
+      <rect width="440" height="300" rx="24" fill="#ffffff" stroke="#d1d5db"/>
+      <text x="42" y="60" fill="#111827" font-size="32" font-weight="700">硬盘：长期保存</text>
+      <rect x="60" y="105" width="320" height="52" rx="14" fill="#dbeafe"/>
+      <rect x="60" y="177" width="260" height="52" rx="14" fill="#dbeafe"/>
+      <rect x="60" y="249" width="190" height="28" rx="10" fill="#93c5fd"/>
+      <text x="82" y="140" fill="#1e3a8a" font-size="23">照片、视频、文档</text>
+      <text x="82" y="212" fill="#1e3a8a" font-size="23">系统、软件、资料</text>
+    </g>
+    <g transform="translate(655 220)">
+      <rect width="440" height="300" rx="24" fill="#ffffff" stroke="#d1d5db"/>
+      <text x="42" y="60" fill="#111827" font-size="32" font-weight="700">内存：临时运行</text>
+      <rect x="60" y="105" width="140" height="60" rx="14" fill="#dcfce7"/>
+      <rect x="220" y="105" width="140" height="60" rx="14" fill="#ede9fe"/>
+      <rect x="60" y="190" width="140" height="60" rx="14" fill="#ffedd5"/>
+      <rect x="220" y="190" width="140" height="60" rx="14" fill="#fee2e2"/>
+      <text x="92" y="143" fill="#166534" font-size="22">浏览器</text>
+      <text x="252" y="143" fill="#5b21b6" font-size="22">微信</text>
+      <text x="92" y="228" fill="#9a3412" font-size="22">会议</text>
+      <text x="252" y="228" fill="#991b1b" font-size="22">表格</text>
+    </g>
+  </g>
+</svg>
