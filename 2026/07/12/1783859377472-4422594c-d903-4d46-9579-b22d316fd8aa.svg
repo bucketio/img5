@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">删除图标要看它是真文件还是快捷方式</title>
+  <desc id="desc">说明删除真实文件会进入回收站，删除快捷方式通常不会卸载软件。</desc>
+  <rect width="900" height="430" fill="#ffffff"/>
+  <text x="48" y="66" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#182033">删除图标，结果不一定一样</text>
+  <rect x="70" y="135" width="330" height="210" rx="22" fill="#fff5df" stroke="#e7c878" stroke-width="3"/>
+  <text x="105" y="182" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#946200">删除真实文件</text>
+  <path d="M176 220 h90 l18 24 h70 v54 H176 z" fill="#f2b84b"/>
+  <path d="M300 258 h42 v68 h-42 z" fill="#6b7280"/>
+  <text x="112" y="378" font-family="Arial, sans-serif" font-size="20" fill="#5f6b80">文件会进入回收站</text>
+  <rect x="500" y="135" width="330" height="210" rx="22" fill="#e8f7ef" stroke="#b7e4c7" stroke-width="3"/>
+  <text x="535" y="182" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#24704d">删除快捷方式</text>
+  <rect x="612" y="220" width="70" height="58" rx="10" fill="#52b788"/>
+  <path d="M612 278 l30 -30 v21 h43 v18 h-43 v21 z" fill="#ffffff"/>
+  <text x="545" y="378" font-family="Arial, sans-serif" font-size="20" fill="#5f6b80">通常只是少了一个入口</text>
+</svg>
