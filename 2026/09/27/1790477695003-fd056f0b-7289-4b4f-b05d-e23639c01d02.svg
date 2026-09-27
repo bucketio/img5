@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 610" font-family="'PingFang SC','Microsoft YaHei','Segoe UI',sans-serif">
+  <defs>
+    <marker id="rtArrow" markerWidth="10" markerHeight="8" refX="8" refY="3.5" orient="auto">
+      <path d="M0,0 L8,3.5 L0,7 Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="610" fill="#F8FAFC"/>
+
+  <!-- 标题 -->
+  <text x="480" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1E3A5F">质量规则检查表达式：三种类型</text>
+  <text x="480" y="66" text-anchor="middle" font-size="13.5" fill="#64748B">表达式均为 SQL:SELECT 语句，每条语句均可指定数据源（PDM / ERP / CAPP / MES）</text>
+
+  <!-- ================= 列1：直接校验 ================= -->
+  <g>
+    <rect x="30" y="96" width="280" height="46" rx="10" fill="#2563EB"/>
+    <text x="170" y="125" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">直接校验</text>
+    <rect x="240" y="86" width="64" height="20" rx="10" fill="#FFF7ED" stroke="#EA580C"/>
+    <text x="272" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#EA580C">优先使用</text>
+
+    <rect x="50" y="170" width="240" height="54" rx="8" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <text x="170" y="202" text-anchor="middle" font-size="14" fill="#1E3A5F">SQL：异常条件 A</text>
+    <line x1="170" y1="228" x2="170" y2="244" stroke="#94A3B8" stroke-width="2" marker-end="url(#rtArrow)"/>
+
+    <rect x="50" y="248" width="240" height="54" rx="8" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <text x="170" y="280" text-anchor="middle" font-size="14" fill="#1E3A5F">筛选命中记录</text>
+    <line x1="170" y1="306" x2="170" y2="322" stroke="#94A3B8" stroke-width="2" marker-end="url(#rtArrow)"/>
+
+    <rect x="56" y="326" width="126" height="42" rx="21" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="119" y="352" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#DC2626">有命中 → 异常</text>
+    <rect x="188" y="326" width="126" height="42" rx="21" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="251" y="352" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#16A34A">无命中 → 正常</text>
+
+    <rect x="50" y="392" width="240" height="120" rx="8" fill="#F1F5F9"/>
+    <text x="64" y="418" font-size="12" font-weight="bold" fill="#64748B">典型示例</text>
+    <text x="64" y="444" font-size="13" fill="#334155">单表非空检查、值域校验、</text>
+    <text x="64" y="468" font-size="13" fill="#334155">重复检测。在数据库客户端执行，</text>
+    <text x="64" y="492" font-size="13" fill="#334155">所见即检查结果，最易验证。</text>
+  </g>
+
+  <!-- ================= 列2：条件必选 If-Then ================= -->
+  <g>
+    <rect x="340" y="96" width="280" height="46" rx="10" fill="#0891B2"/>
+    <text x="480" y="120" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">条件必选</text>
+    <text x="480" y="137" text-anchor="middle" font-size="11" fill="#CFFAFE">If-Then</text>
+
+    <rect x="360" y="170" width="240" height="54" rx="8" fill="#FFFFFF" stroke="#A5F3FC"/>
+    <text x="480" y="202" text-anchor="middle" font-size="14" fill="#1E3A5F">前置条件 SQL（含变量）</text>
+    <line x1="480" y1="228" x2="480" y2="244" stroke="#94A3B8" stroke-width="2" marker-end="url(#rtArrow)"/>
+
+    <rect x="360" y="248" width="240" height="54" rx="8" fill="#FFFFFF" stroke="#A5F3FC"/>
+    <text x="480" y="280" text-anchor="middle" font-size="14" fill="#1E3A5F">变量代入：必须满足 B</text>
+    <line x1="480" y1="306" x2="480" y2="322" stroke="#94A3B8" stroke-width="2" marker-end="url(#rtArrow)"/>
+
+    <rect x="366" y="326" width="126" height="42" rx="21" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="429" y="352" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#DC2626">B 不满足 → 异常</text>
+    <rect x="498" y="326" width="126" height="42" rx="21" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="561" y="352" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#16A34A">B 满足 → 正常</text>
+
+    <rect x="360" y="392" width="240" height="120" rx="8" fill="#F1F5F9"/>
+    <text x="374" y="418" font-size="12" font-weight="bold" fill="#64748B">典型示例</text>
+    <text x="374" y="444" font-size="13" fill="#334155">含有零部件 X 的产品，</text>
+    <text x="374" y="468" font-size="13" fill="#334155">则必须配套零部件 Y；</text>
+    <text x="374" y="492" font-size="13" fill="#334155">未配套即为异常。</text>
+  </g>
+
+  <!-- ================= 列3：条件互斥 If-Then-Not ================= -->
+  <g>
+    <rect x="650" y="96" width="280" height="46" rx="10" fill="#7C3AED"/>
+    <text x="800" y="120" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">条件互斥</text>
+    <text x="800" y="137" text-anchor="middle" font-size="11" fill="#EDE9FE">If-Then-Not</text>
+
+    <rect x="670" y="170" width="240" height="54" rx="8" fill="#FFFFFF" stroke="#DDD6FE"/>
+    <text x="800" y="202" text-anchor="middle" font-size="14" fill="#1E3A5F">前置条件 SQL（含变量）</text>
+    <line x1="800" y1="228" x2="800" y2="244" stroke="#94A3B8" stroke-width="2" marker-end="url(#rtArrow)"/>
+
+    <rect x="670" y="248" width="240" height="54" rx="8" fill="#FFFFFF" stroke="#DDD6FE"/>
+    <text x="800" y="280" text-anchor="middle" font-size="14" fill="#1E3A5F">检查是否命中：条件 C</text>
+    <line x1="800" y1="306" x2="800" y2="322" stroke="#94A3B8" stroke-width="2" marker-end="url(#rtArrow)"/>
+
+    <rect x="676" y="326" width="126" height="42" rx="21" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="739" y="352" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#DC2626">命中 C → 异常</text>
+    <rect x="808" y="326" width="126" height="42" rx="21" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="871" y="352" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#16A34A">未命中 → 正常</text>
+
+    <rect x="670" y="392" width="240" height="120" rx="8" fill="#F1F5F9"/>
+    <text x="684" y="418" font-size="12" font-weight="bold" fill="#64748B">典型示例</text>
+    <text x="684" y="444" font-size="13" fill="#334155">含有零部件 X 的产品，</text>
+    <text x="684" y="468" font-size="13" fill="#334155">则不能配套零部件 Z；</text>
+    <text x="684" y="492" font-size="13" fill="#334155">同时命中即为异常。</text>
+  </g>
+
+  <!-- 底部说明条 -->
+  <rect x="30" y="536" width="900" height="50" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="480" y="566" text-anchor="middle" font-size="13" fill="#1D4ED8">前置条件中的 SELECT 字段可作为变量代入后续表达式 · 异常处理责任人亦可通过 SQL:SELECT 动态指定</text>
+</svg>
